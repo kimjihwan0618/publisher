@@ -1,0 +1,14 @@
+#drag__item__list {
+  margin-top: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#drag__item__list > li {
+  position: relative;
+}
+#drop__item__list {
+  margin-top: 86px;
+  display: flex;
+  justify-content: space-between;
+}

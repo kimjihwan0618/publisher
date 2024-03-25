@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADL - 분리수거</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/separateCollection.css" />
+</head>
+
+<body>
+  <div id="mobile__view">
+    <header>
+      <div class="header__inner">
+        <a href="#">
+          <img src="./img/ic_back-arrow.svg" alt="" />
+          <p class="f__regular">기억력 훈련</p>
+        </a>
+        <p class="f__light">n&nbsp;/&nbsp;n</p>
+      </div>
+    </header>
+    <main>
+      <div class="main__inner">
+        <p class="f__bold time__text">03:00</p>
+        <p class="f__light notice__txt">쓰레기를<br />분리수거 해주세요.</p>
+        <ul id="drag__item__list">
+          <li draggable="true" ontouchstart="dragStart(event)" ontouchmove="dragMove(event)" ontouchend="drop(event)">
+            <img />
+          </li>
+          <li draggable="true" ontouchstart="dragStart(event)" ontouchmove="dragMove(event)" ontouchend="drop(event)">
+            <img />
+          </li>
+          <li draggable="true" ontouchstart="dragStart(event)" ontouchmove="dragMove(event)" ontouchend="drop(event)">
+            <img />
+          </li>
+          <li draggable="true" ontouchstart="dragStart(event)" ontouchmove="dragMove(event)" ontouchend="drop(event)">
+            <img />
+          </li>
+        </ul>
+        <ul id="drop__item__list">
+          <li data-index="0">
+            <img src="./img/separateCollection/trash_can.svg" alt="캔 쓰레기통" />
+          </li>
+          <li data-index="1">
+            <img src="./img/separateCollection/trash_plastic.svg" alt="비닐 쓰레기통" />
+          </li>
+          <li data-index="2">
+            <img src="./img/separateCollection/trash_glass.svg" alt="유리 쓰레기통" />
+          </li>
+          <li data-index="3">
+            <img src="./img/separateCollection/trash_paper.svg" alt="종이 쓰레기통" />
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div class="button__wrap">
+      <button class="f__medium off__btn" id="submit">제출하기</button>
+    </div>
+  </div>
+  <script src="./js/separateCollection.js"></script>
+</body>
+
+</html>
